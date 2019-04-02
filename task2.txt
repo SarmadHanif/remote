@@ -1,0 +1,4 @@
+
+this is to show the work one for github task.
+i have made a local repository named sarmad and in it i am adding some dummy data as required by the task.
+
