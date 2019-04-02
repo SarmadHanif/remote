@@ -1,4 +1,4 @@
-
 this is to show the work one for github task.
 i have made a local repository named sarmad and in it i am adding some dummy data as required by the task.
+Now i am in branch B through gitbash and trying to edit again to raise conflict which is the next task let's us see how it works it's just a dummy data.
 
