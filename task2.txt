@@ -1,4 +1,5 @@
 
 this is to show the work one for github task.
 i have made a local repository named sarmad and in it i am adding some dummy data as required by the task.
+Now i am in branch a created by gitbash by using the command git checkout -b A which switched me to branch A and hopefully i am editing this document or changes will appear in this document.
 
