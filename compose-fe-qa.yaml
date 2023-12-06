@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  ICON-EXCHANGE:
+    image: troontech/icnxchngfe:qa
+    hostname: 10.70.0.2
+    container_name: icon-fe-qa
+
+    ports:
+      - '8082:8080'
+    networks:
+      icon-fe-qa:
+        ipv4_address: 10.70.0.2
+
+    restart: on-failure
+
+networks:
+  icon-fe-qa:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.70.0.0/16
