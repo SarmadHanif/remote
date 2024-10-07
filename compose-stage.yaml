@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  Alvara-Backend-STAGE:
+    image: 637423199678.dkr.ecr.eu-west-1.amazonaws.com/alvara-backend:latest
+    hostname: 10.60.0.2
+    container_name: alvara-backend-stage
+    env_file:
+      - .env
+
+    ports:
+      - '8081:8080'
+    # volumes:
+    #   - /home/ubuntu/api-dev/temp-files:/usr/src/app/dist/src/public
+    networks:
+      alvara-backend-stage:
+        ipv4_address: 10.90.0.2
+
+    restart: on-failure
+
+networks:
+  alvara-backend-stage:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.90.0.0/16
